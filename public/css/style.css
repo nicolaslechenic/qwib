@@ -82,7 +82,7 @@ article img{
 .resume{
     text-align: left;
 }
-#left-arrow{
+/*#left-arrow{
     position: absolute;
     bottom: -1150px;
 }
@@ -93,7 +93,7 @@ article img{
 }
 #slide{
     position: relative;
-}
+}*/
                             /* CSS POUR LE FOOTER */
 footer{
     border-top: 2px inset black;
