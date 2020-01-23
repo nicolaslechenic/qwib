@@ -82,18 +82,15 @@ article img{
 .resume{
     text-align: left;
 }
-/*#left-arrow{
+.left-arrow{
     position: absolute;
     bottom: -1150px;
 }
-#right-arrow{
+.right-arrow{
     position: absolute;
     bottom: -1150px;
     right: 159px;
 }
-#slide{
-    position: relative;
-}*/
                             /* CSS POUR LE FOOTER */
 footer{
     border-top: 2px inset black;
@@ -195,14 +192,6 @@ et aligne les input*/
     color: black;
     text-decoration: none;
 }
-                            /* css Connexion */
-header h1{
-    margin-top: 20px;
-}
-#contact p label{
-    vertical-align: top;
-    padding-bottom: 10px;
-}
                               /*  MEDIAQUERIES */
 
 @media screen and (max-width:1200px){
@@ -214,7 +203,7 @@ header h1{
         text-align: right;
         padding: 10px 10px;
     }
-    #wrapper{
+    .wrapper{
         display: none;
     }
     article{
