@@ -131,23 +131,23 @@ footer .adresse address{
                             /* CSS POUR CONTACT */
 /* aligne les "titres" de chaque message (principalement pour le textarea)
 et aligne les input*/
-#contact p label{
+.contact p label{
     display: inline-block;
     width: 100px;
     vertical-align: top;
     padding-bottom: 10px;
 }
-#contact .bouton{
+.contact .bouton{
     color: orangered;
     text-align: center;
     padding: 20px 0;
 }
-#contact fieldset{
+.contact fieldset{
     border: 1px dashed black;
     padding: 20px 10px;
     margin-bottom: 15px;
 }
-#contact p input[type=submit],#contact p input[type=reset]{
+.contact p input[type=submit],#contact p input[type=reset]{
     padding: 5px 15px;
     background-color: red;
     color: white;
@@ -159,7 +159,7 @@ et aligne les input*/
     -o-border-radius: 40px;
     margin: 10px;
 }
-#contact p input[type=submit]:hover,#contact p input[type=reset]:hover{
+.contact p input[type=submit]:hover,#contact p input[type=reset]:hover{
     color:red;
     background-color:whitesmoke;
 }

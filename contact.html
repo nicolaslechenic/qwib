@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fr">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
@@ -8,6 +8,7 @@
     <meta name="description" content="Prenez contact avec notre équipe de service-après-vente ou de conseil, organiser un évènement ou régler un litige">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
     <link rel="stylesheet" href="public/css/style.css">
+    <script type="text/javascript" src="public/jquery.js"></script>
     <title>Contact</title>
 </head>
 <body class="formulaire">
@@ -25,7 +26,7 @@
             </div>
           <!-- Modal body -->
             <div class="modal-body">
-              <form id="contact" action="traitement.php" method="post">
+              <div id="contact">
                 <p>
                   <label for="identifiant">Identifiant</label>
                   <input type="text" name="identifiant" id="identifiant" placeholder="identifiant">
@@ -34,7 +35,7 @@
                   <label for="password">Mot de passe</label>
                   <input type="text" name="password" id="password" placeholder="123 n'est pas un mdp">
                 </p>
-              </form>        
+              </div>        
             </div>
           <!-- Modal footer -->
             <div class="modal-footer">
@@ -74,7 +75,7 @@
     </div>
   </header>
   <main>
-    <form id="contact" action="traitement.php" method="post">
+    <div class="contact">
       <fieldset>
         <legend>Vos coordonnées</legend>
         <div class="colonne">
@@ -88,18 +89,24 @@
           <p>
             <!--Ici input nom/prénom ainsi que pour l'objet du message et le message-->
             <label for="nom">Nom :</label>
-            <input type="text" name="nom" id="nom" placeholder="Nom de famille" required>
+            <input type="text" name="nom" id="info" id="nom" placeholder="Nom de famille" required>
             <span id="missNom"></span><br>
           </p>
           <p>
             <label for="prenom">Prénom :</label>
-            <input type="text" name="prenom" id="prenom" placeholder="Prénom" required>
+            <input type="text" name="prenom" id="info2" id="prenom" placeholder="Prénom" required>
             <span id="missprenom"></span><br>
           </p>
           <p>
             <label for="phone">Téléphone :</label>
-            <input type="tel" name="phone" id="phone" placeholder="Numéro de téléphone" required>
+            <input type="tel" name="phone" id="info3" id="phone" placeholder="Numéro de téléphone" required>
             <span id="missPhone"></span><br>
+          </p>
+          <p>
+            <label for="street">Adresse :</label>
+            <input type="text" name="street" id="info4" id="street" placeholder="Votre adresse" required>
+            
+            <p id="search"></p>
           </p>
           <p>
             <label for="mail">Mail :</label>
@@ -122,10 +129,10 @@
         </div>
       </fieldset>
         <p class="bouton">
-            <input type="submit" id="submit" value="Envoyer">
+            <button id="submit">Go</button>
             <input type="reset" value="Annuler">
         </p>
-    </form>
+    </div>
   </main>
   <footer>
     <!--aside pour l'adresse et le copier/coller du lien google map-->
@@ -155,14 +162,16 @@
       <a href="mentionlegale.html">Mentions légales</a>
       <a href="sitemap.html">Plan du Site</a>
     </p>
-  </div> 
+  </div>
+  <script src="public/js/creds.js"></script> 
+  <script src="public/js/apislack.js"></script>
+  <script src="public/js/api.js"></script>
   <script src="public/js/regex.js"></script>
   <script src="public/js/active.js"></script>
 
 
   <script>menuAct(4);</script>
-  
-  <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+  é
   <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script> 
   
