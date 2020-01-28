@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fr">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
@@ -102,6 +102,12 @@
             <span id="missPhone"></span><br>
           </p>
           <p>
+            <label for="street">Adresse :</label>
+            <input type="text" name="street" id="street" placeholder="Votre adresse" required>
+            
+            <p id="search"></p>
+          </p>
+          <p>
             <label for="mail">Mail :</label>
             <input type="email" name="mail" id="mail" placeholder="Votre e-mail" required>
             <span id="mailError"></span><br>
@@ -156,6 +162,7 @@
       <a href="sitemap.html">Plan du Site</a>
     </p>
   </div> 
+  <script src="public/js/api.js"></script>
   <script src="public/js/regex.js"></script>
   <script src="public/js/active.js"></script>
 
