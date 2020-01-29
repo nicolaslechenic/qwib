@@ -3,7 +3,7 @@ let formValid = document.getElementById("submit");
 
         formValid.addEventListener('click', validationMail);
         function validationMail(event){
-            let mail = document.getElementById("mail").value;
+            let mail = document.getElementById("mail");
             let mailError = document.getElementById("mailError");
             let RegexMail = /^[a-zA-Z0-9]+@[a-zA-Z-]+\.[a-z]{2,6}$/;
             console.log(mail.validity)
@@ -25,7 +25,7 @@ let formValid = document.getElementById("submit");
 
         formValid.addEventListener('click', validNom);
         function validNom(event){
-            let nom = document.getElementById("nom").value;
+            let nom = document.getElementById("nom");
             let missNom = document.getElementById("missNom");
             let RegexNom = /^([A-ZÉÈÎÏ][a-zéèêàçîï]{2,})+([-'\s][a-zA-ZéèîïÉÈÎÏ][a-zéèêàçîï]{2,})?$/;
             if(nom.validity.valueMissing){
@@ -49,7 +49,7 @@ let formValid = document.getElementById("submit");
 
         formValid.addEventListener('click', validPrenom);
         function validPrenom(event){
-            let prenom = document.getElementById("prenom").value;
+            let prenom = document.getElementById("prenom");
             let missprenom = document.getElementById("missprenom");
             let RegexPrenom = /^([A-ZÉÈÎÏ][a-zéèêàçîï]{2,})+([-'\s][a-zA-ZéèîïÉÈÎÏ][a-zéèêàçîï]{2,})?$/;
             if(prenom.validity.valueMissing){
@@ -73,7 +73,7 @@ let formValid = document.getElementById("submit");
         
         formValid.addEventListener('click', validPhone);
         function validPhone(event){
-            let phone = document.getElementById("phone").value;
+            let phone = document.getElementById("phone");
             let missPhone = document.getElementById("missPhone");
             let RegexPhone = /^(0|\+33)[1-9]([-. ]?[0-9]{2}){4}$/;
             if(phone.validity.valueMissing){
