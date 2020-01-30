@@ -1,5 +1,6 @@
 $("#submit").click(function(){
 
+
     let nom = document.getElementById("nom").value;
     let prenom = document.getElementById("prenom").value;
     let tel = document.getElementById("phone").value;
