@@ -1,6 +1,5 @@
 $("#submit").click(function(){
 
-    console.log("ok")
 
     let nom = document.getElementById("nom").value;
     let prenom = document.getElementById("prenom").value;
