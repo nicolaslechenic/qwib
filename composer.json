@@ -1,0 +1,10 @@
+{
+    "name": "kiera/myproject",
+    "authors": [
+        {
+            "name": "Kiéran GOURLAOUEN",
+            "email": "kieran50@live.fr"
+        }
+    ],
+    "require": {}
+}
