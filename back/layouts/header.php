@@ -111,19 +111,19 @@
     <div class="collapse navbar-collapse justify-content-center" id="collapsibleNavbar">
         <ul class="navbar-nav" id="menuActive">
             <li class="nav-item">
-                <a class="nav-link" href="index.html">Accueil</a>
+                <a class="nav-link" href="index.php?action=index">Accueil</a>
             </li>
             <li class="nav-item">
-                <a class="nav-link" href="presentation.html">Présentation</a>
+                <a class="nav-link" href="index.php?action=presentation">Présentation</a>
             </li>
             <li class="nav-item">
-                <a class="nav-link" href="boutique.html">Boutique</a>
+                <a class="nav-link" href="index.php?action=boutique">Boutique</a>
             </li>
             <li class="nav-item">
-                <a class="nav-link" href="blog.html">Blog</a>
+                <a class="nav-link" href="index.php?action=blog">Blog</a>
             </li>
             <li class="nav-item">
-                <a class="nav-link" href="contact.html">Contact</a>
+                <a class="nav-link" href="index.php?action=contact">Contact</a>
             </li>
         </ul>
     </div>
