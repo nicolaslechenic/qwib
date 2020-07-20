@@ -6,5 +6,7 @@
             "email": "kieran50@live.fr"
         }
     ],
-    "require": {}
+    "require": {
+        "vlucas/phpdotenv": "^5.0"
+    }
 }
